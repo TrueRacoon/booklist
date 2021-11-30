@@ -9,7 +9,7 @@ import Tabs from './components/Tabs/Tabs';
 import TabType from './consts/TabType';
 
 const App: React.FC = (): JSX.Element => {
-  const { currentTab = 'to_read' } = useParams();
+  const { currentTab = TabType.ToRead } = useParams();
 
   const [searchParams] = useSearchParams();
   const tagsParam = searchParams.get('tags');
@@ -83,18 +83,18 @@ const App: React.FC = (): JSX.Element => {
   const tabsList = [
     {
       text: `To read (${booksList.length - inProgressIds.length - doneIds.length})`,
-      link: '/',
-      isCurrent: currentTab === 'to_read',
+      link: '',
+      isCurrent: currentTab === TabType.ToRead,
     },
     {
       text: `In progress (${inProgressIds.length})`,
-      link: '/in_progress',
-      isCurrent: currentTab === 'in_progress',
+      link: TabType.InProgress,
+      isCurrent: currentTab === TabType.InProgress,
     },
     {
       text: `Done (${doneIds.length})`,
-      link: '/done',
-      isCurrent: currentTab === 'done',
+      link: TabType.Done,
+      isCurrent: currentTab === TabType.Done,
     },
   ];
 
