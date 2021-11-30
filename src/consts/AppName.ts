@@ -1,1 +1,1 @@
-export default 'booklist/';
+export default '';
