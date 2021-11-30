@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91cf96bb.chunk.css",
+    "main.js": "/static/js/main.8a4a8273.chunk.js",
+    "main.js.map": "/static/js/main.8a4a8273.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ab98dba0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ab98dba0.js.map",
+    "static/js/2.4d0b9dba.chunk.js": "/static/js/2.4d0b9dba.chunk.js",
+    "static/js/2.4d0b9dba.chunk.js.map": "/static/js/2.4d0b9dba.chunk.js.map",
+    "static/js/3.5a289e82.chunk.js": "/static/js/3.5a289e82.chunk.js",
+    "static/js/3.5a289e82.chunk.js.map": "/static/js/3.5a289e82.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.91cf96bb.chunk.css.map": "/static/css/main.91cf96bb.chunk.css.map",
+    "static/js/2.4d0b9dba.chunk.js.LICENSE.txt": "/static/js/2.4d0b9dba.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/nanum-brush-script-regular.abe7e3a5.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab98dba0.js",
+    "static/js/2.4d0b9dba.chunk.js",
+    "static/css/main.91cf96bb.chunk.css",
+    "static/js/main.8a4a8273.chunk.js"
+  ]
+}
