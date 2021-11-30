@@ -1,0 +1,20 @@
+.tag-filter {
+  border-bottom: 1px solid;
+  padding: 0.5em 0.5em 0 1em;
+}
+
+.tag-filter__label {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.tag-filter__clear-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Caveat', sans-serif;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}

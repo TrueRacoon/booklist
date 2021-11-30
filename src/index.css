@@ -1,8 +1,50 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  min-width: 320px;
+}
+
+/* Default font */
+@font-face {
+  font-family: 'Caveat';
+  src: url('./fonts/caveat-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Korean, Chinese */
+@font-face {
+  font-family: 'Klee One';
+  src: url('./fonts/klee-one-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Japanese */
+@font-face {
+  font-family: 'Nanum Brush Script';
+  src: url('./fonts/nanum-brush-script-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Caveat', 'Klee One', 'Nanum Brush Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
