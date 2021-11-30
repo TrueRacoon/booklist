@@ -4,14 +4,13 @@ import './index.css';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AppName from './consts/AppName';
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path={`/${AppName}`} element={<App />} />
-        <Route path={`/${AppName}:currentTab`} element={<App />} />
+        <Route path="/" element={<App />} />
+        <Route path="/:currentTab" element={<App />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>,
