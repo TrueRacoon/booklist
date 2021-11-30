@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './Tabs.css';
+import AppName from '../../consts/AppName';
 
 interface ITab {
   text: string;
@@ -20,7 +21,7 @@ export default ({ tabsList, tagsParam, children }: ITabsProps): JSX.Element => (
       {
         tabsList.map((tab) => (
           <Link
-            to={`${tab.link}${tagsParam ? `?tags=${encodeURIComponent(tagsParam)}` : ''}`}
+            to={`/${AppName}${tab.link}${tagsParam ? `?tags=${encodeURIComponent(tagsParam)}` : ''}`}
             key={tab.link}
             className={`tabs__link${tab.isCurrent ? ' tabs__link_current' : ''}`}
             style={{ width: `${100 / tabsList.length}%` }}

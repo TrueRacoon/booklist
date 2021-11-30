@@ -4,13 +4,14 @@ import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppName from './consts/AppName';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/:currentTab" element={<App />} />
+        <Route path={`/${AppName}`} element={<App />} />
+        <Route path={`/${AppName}:currentTab`} element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
